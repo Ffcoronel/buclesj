@@ -1,0 +1,25 @@
+String estacion = "verano";
+
+String obtenerEstacion(String estacion) {
+    String mensaje = "";
+    switch (estacion) {
+        case "primavera":
+            mensaje = "Estamos en primavera.";
+            break;
+        case "verano":
+            mensaje = "Estamos en verano.";
+            break;
+        case "otoño":
+            mensaje = "Estamos en otoño.";
+            break;
+        case "invierno":
+            mensaje = "Estamos en invierno.";
+            break;
+        default:
+            mensaje = "Esto no es una estación válida.";
+            break;
+    }
+    return mensaje;
+}
+
+System.out.println(obtenerEstacion(estacion));
